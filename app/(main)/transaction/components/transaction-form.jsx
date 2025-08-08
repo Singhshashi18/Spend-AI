@@ -280,7 +280,7 @@ export function AddTransactionForm({
     id="isRecurring"
     checked={isRecurring}
     onCheckedChange={(checked) => setValue("isRecurring", checked)}
-    className="peer inline-flex h-4 w-8 shrink-0 cursor-pointer items-center rounded-full border border-gray-400 bg-white transition-colors data-[state=checked]:bg-white"
+    className="peer inline-flex h-7 w-14 shrink-0 cursor-pointer items-center rounded-full border border-gray-400 bg-white transition-colors data-[state=checked]:bg-white"
   />
   <span className="ml-2 text-sm text-gray-700">Recurring</span>
 

@@ -39,7 +39,7 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
-          {/* add any link in href section of demo watch */}
+          
           <Link href="/dashboard">
             <Button size="lg" variant="outline" className=" rounded-lgpx-8 bg-black text-white">
               Watch Demo
