@@ -13,35 +13,7 @@ import Link from "next/link";
 export function AccountCard({ account }) {
   const { name, type, balance, id, isDefault } = account;
 
-//   const {
-//     loading: updateDefaultLoading,
-//     fn: updateDefaultFn,
-//     data: updatedAccount,
-//     error,
-//   } = useFetch(updateDefaultAccount);
 
-//   const handleDefaultChange = async (event) => {
-//     event.preventDefault(); // Prevent navigation
-
-//     if (isDefault) {
-//       toast.warning("You need atleast 1 default account");
-//       return; // Don't allow toggling off the default account
-//     }
-
-//     await updateDefaultFn(id);
-//   };
-
-//   useEffect(() => {
-//     if (updatedAccount?.success) {
-//       toast.success("Default account updated successfully");
-//     }
-//   }, [updatedAccount]);
-
-//   useEffect(() => {
-//     if (error) {
-//       toast.error(error.message || "Failed to update default account");
-//     }
-//   }, [error]);
 
   return (
     <Card className="hover:shadow-lg transition-shadow group relative border-b-4 border-gray-400">
