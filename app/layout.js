@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${inter.className} bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300`}
         >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <Header />
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
