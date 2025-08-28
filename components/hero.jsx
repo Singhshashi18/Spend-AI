@@ -79,7 +79,7 @@ import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
-
+import ReceiptSearch from '@/app/(main)/transaction/components/receipt-search'
 const HeroSection = () => {
   const imageRef = useRef(null);
 
@@ -150,6 +150,7 @@ const HeroSection = () => {
             className="object-cover rounded-xl"
           />
         </div>
+        
       </div>
 
       <style jsx>{`
@@ -189,7 +190,12 @@ const HeroSection = () => {
           animation: floating 6s ease-in-out infinite;
         }
       `}</style>
+       
+       
     </section>
+             
+        
+    
   )
 }
 

@@ -4,7 +4,7 @@
 import HeroSection from "@/components/hero";
 import { CardContent } from "@/components/ui/card";
 import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing";
-import { Card } from "@/components/ui/card";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

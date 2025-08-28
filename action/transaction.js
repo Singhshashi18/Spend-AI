@@ -273,13 +273,20 @@ export async function scanReceipt(file) {
 
     try {
       const data = JSON.parse(cleanedText);
+            const combinedText = `${data.description || ""} from ${data.merchantName || ""} for ₹${data.amount || "?"} on ${data.date || ""}`;
+
       return {
         amount: parseFloat(data.amount),
         date: new Date(data.date),
         description: data.description,
         category: data.category,
         merchantName: data.merchantName,
+
+      text:combinedText.trim(),// AI se aayega future me
+      filename: file.name
       };
+
+      
     } catch (parseError) {
       console.error("Error parsing JSON response:", parseError);
       throw new Error("Invalid response format from Gemini");

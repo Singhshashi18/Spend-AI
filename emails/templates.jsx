@@ -10,10 +10,10 @@ import {
   Text,
 } from "@react-email/components";
 
-// Dummy data for preview
+
 const PREVIEW_DATA = {
   monthlyReport: {
-    userName: "John Doe",
+    userName: "",
     type: "monthly-report",
     data: {
       month: "December",
@@ -36,7 +36,7 @@ const PREVIEW_DATA = {
     },
   },
   budgetAlert: {
-    userName: "John Doe",
+    userName: "",
     type: "budget-alert",
     data: {
       percentageUsed: 85,
@@ -65,32 +65,32 @@ export default function EmailTemplate({
               Here&rsquo;s your financial summary for {data?.month}:
             </Text>
 
-            {/* Main Stats */}
+           
             <Section style={styles.statsContainer}>
               <div style={styles.stat}>
                 <Text style={styles.text}>Total Income</Text>
-                <Text style={styles.heading}>${PREVIEW_DATA.monthlyReport.totalIncome}</Text>
+                <Text style={styles.heading}>${PREVIEW_DATA.monthlyReport.data.stats.totalIncome}</Text>
               </div>
               <div style={styles.stat}>
                 <Text style={styles.text}>Total Expenses</Text>
-                <Text style={styles.heading}>${PREVIEW_DATA.monthlyReport.totalExpenses}</Text>
+                <Text style={styles.heading}>${PREVIEW_DATA.monthlyReport.data.stats.totalExpenses}</Text>
               </div>
               <div style={styles.stat}>
                 <Text style={styles.text}>Net</Text>
                 <Text style={styles.heading}>
-                  ${PREVIEW_DATA.monthlyReport.totalIncome - PREVIEW_DATA.monthlyReport.totalExpenses}
+                  ${PREVIEW_DATA.monthlyReport.data.stats.totalIncome - PREVIEW_DATA.monthlyReport.data.stats.totalExpenses}
                 </Text>
               </div>
             </Section>
 
-            {/* Category Breakdown */}
+           
             {data?.stats?.byCategory && (
               <Section style={styles.section}>
                 <Heading style={styles.heading}>Expenses by Category</Heading>
                 {Object.entries(data?.stats.byCategory).map(
                   ([category, amount]) => (
                     <div key={category} style={styles.row}>
-                      <Text style={styles.text}>{category}</Text>
+                      <Text style={styles.text}>{category}:</Text>
                       <Text style={styles.text}>${amount}</Text>
                     </div>
                   )
@@ -98,7 +98,7 @@ export default function EmailTemplate({
               </Section>
             )}
 
-            {/* AI Insights */}
+            
             {data?.insights && (
               <Section style={styles.section}>
                 <Heading style={styles.heading}>Welth Insights</Heading>

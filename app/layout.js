@@ -23,11 +23,13 @@ export default function RootLayout({ children }) {
         >
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <Header />
+            
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
             <footer className="bg-blue-200 dark:bg-gray-800 py-12 transition-all duration-300">
               <div className="container font-bold mx-auto px-4 text-center text-black dark:text-white">
                 <p className="animate-bounce">SpendAI❤️</p>
+                
                 <Switch>
                   
                 </Switch>
