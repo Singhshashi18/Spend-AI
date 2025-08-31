@@ -5,9 +5,9 @@ import { storeReceiptEmbedding } from "@/lib/embeddings";
 export async function POST(req) {
   try {
     const body = await req.json();
-    const {  receiptid, text, category,amount,date,filename } = body;
+    const {  receiptid, text, category,amount,date,filename,merchantName } = body;
 
-    await storeReceiptEmbedding({ receiptid, text, category,amount,date,filename});
+    await storeReceiptEmbedding({ receiptid, text, category,amount,date,filename,merchantName});
 
     return NextResponse.json({ message: "Embedding stored successfully" });
   } catch (error) {

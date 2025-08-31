@@ -34,7 +34,7 @@ function getReplyIntro(lang, query, count) {
   if (lang === "hinglish") {
     return `✅ "${query}" ke liye ${count} receipt${count > 1 ? "s" : ""} mil gayi 👇`;
   }
-  return `✅ Found ${count} matching receipt${count > 1 ? "s" : ""} for "${query}" 👇`;
+  return ` ✅ Found ${count} matching receipt${count > 1 ? "s" : ""} for "${query}" 👇`;
 }
 
 export async function POST(req) {
@@ -47,7 +47,7 @@ export async function POST(req) {
       return NextResponse.json({ error: "Query is required" }, { status: 400 });
     }
 
-    const vectorStore = await getVectorStore("__default__");
+    const vectorStore = await getVectorStore("receipts");
     const expandedQuery = expandQuery(query);
     const q = expandedQuery.toLowerCase();
     const inferredCategory = inferCategory(q);

@@ -54,12 +54,12 @@ export default function ReceiptAssistant() {
             { role: "assistant", text: `✅ Found ${results.length} matching receipt${results.length > 1 ? "s" : ""} for "${trimmed}":`, time: new Date() },
             ...results.map(r => ({
               role: "assistant",
-              text: `🧾 ${r.text}\n💰 ₹${r.amount}\n📦 ${r.category}\n🗓️ ${r.date ? new Date(r.date).toLocaleDateString() : "N/A"}\n🏪 ${r.merchant || "N/A"}`,
+              text: `🧾 ${r.text}\n💰 ₹${r.amount}\n📦 ${r.category}\n🗓️ ${r.date ? new Date(r.date).toLocaleDateString() : "N/A"}\n🏪 ${r.merchantName || "N/A"}`,
               time: new Date()
             }))
           ]));
         }
-        setTyping(false);
+        setTyping(false);  
       }, 800);
     } catch (err) {
       console.error(err);
@@ -90,7 +90,8 @@ export default function ReceiptAssistant() {
             >
               {msg.role === "assistant" && (
                 <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white">
-                  <Bot size={18} />
+                  <Bot size={18} 
+                  />
                 </div>
               )}
 
