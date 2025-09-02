@@ -1,6 +1,6 @@
 # 🚀 SpendAI – AI-Powered Finance Management Platform  
 
-![SpendAI Banner](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)  
+![SpendAI Banner](public/landingPage.png)  
 
 > **Manage your expenses smarter with AI!**  
 SpendAI is an **AI-powered finance management platform** that helps you **track expenses, scan receipts using AI, and search receipts using Generative AI**.  
