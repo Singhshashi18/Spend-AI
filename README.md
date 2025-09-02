@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 SpendAI – AI-Powered Finance Management Platform  
 
-## Getting Started
+![SpendAI Banner](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)  
 
-First, run the development server:
+> **Manage your expenses smarter with AI!**  
+SpendAI is an **AI-powered finance management platform** that helps you **track expenses, scan receipts using AI, and search receipts using Generative AI**.  
+Built with **Next.js**, **Supabase**, **LangChain**, **Pinecone**, and **Gemini API**.
 
+---
+
+## 🌟 **Features**
+✅ **Finance Management Dashboard**  
+- Add expenses manually or by scanning receipts.  
+- Real-time expense categorization & summary charts.  
+- Secure data storage with Supabase.  
+
+✅ **Smart Receipt Scan (AI-powered OCR)**  
+- Upload a receipt → AI extracts amount, date, vendor.  
+- Data auto-added to expense tracker (Gemini API + OCR).  
+
+✅ **Smart Receipt Search (Generative AI + RAG)**  
+- Search receipts using natural language:  
+  *“Show me the coffee receipt from last week”*.  
+- Uses **LangChain + Pinecone** for semantic search.  
+
+---
+
+## 🛠 **Tech Stack**
+<p align="center">
+<img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+<img src="https://img.shields.io/badge/LangChain-yellow?style=for-the-badge&logo=chainlink&logoColor=white" />
+<img src="https://img.shields.io/badge/Pinecone-0A192F?style=for-the-badge&logo=pinecone&logoColor=white" />
+<img src="https://img.shields.io/badge/Gemini%20API-purple?style=for-the-badge&logo=google&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
+
+---
+
+## 📸 **Screenshots**
+| Dashboard | Smart Receipt Scan | AI Receipt Search |
+|-----------|--------------------|-------------------|
+| ![Dashboard](https://via.placeholder.com/300x200) | ![Receipt Scan](https://via.placeholder.com/300x200) | ![AI Search](https://via.placeholder.com/300x200) |
+
+---
+
+## ⚡ **Installation**
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/spend-ai.git
+
+# Navigate to project
+cd spend-ai
+
+# Install dependencies
+npm install
+
+# Setup environment variables in .env.local
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+GEMINI_API_KEY=your_gemini_api_key
+PINECONE_API_KEY=your_pinecone_api_key
+
+# Run the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
