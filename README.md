@@ -42,7 +42,7 @@ Built with **Next.js**, **Supabase**, **LangChain**, **Pinecone**, and **Gemini 
 ## 📸 **Screenshots**
 | Dashboard | Smart Receipt Scan | AI Receipt Search |
 |-----------|--------------------|-------------------|
-| ![Dashboard](https://via.placeholder.com/300x200) | ![Receipt Scan](https://via.placeholder.com/300x200) | ![AI Search](https://via.placeholder.com/300x200) |
+| ![Dashboard](public/screenshots/dashboard.png) | ![Receipt Scan](public/screenshots/receipt-scan.png) | ![AI Search](public/screenshots/receipt-search.png) |
 
 ---
 
