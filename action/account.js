@@ -4,7 +4,6 @@ import { auth } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
 import { object } from "zod";
 
-
 const serializedTransaction=(obj)=>{
     const serialized={...obj};
     if(obj.balance){
