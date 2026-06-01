@@ -1,4 +1,4 @@
-# 🚀 SpendAI – AI-Powered Finance Management Platform  
+ # 🚀 SpendAI – AI-Powered Finance Management Platform  
 
 ![SpendAI Banner](public/landingPage.png)  
 
