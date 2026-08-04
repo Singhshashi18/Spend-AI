@@ -33,7 +33,7 @@ const PREVIEW_DATA = {
         "Great job keeping entertainment expenses under control this month!",
         "Setting up automatic savings could help you save 20% more of your income.",
       ],
-    },
+    }, 
   },
   budgetAlert: {
     userName: "",
