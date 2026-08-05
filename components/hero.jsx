@@ -7,7 +7,7 @@
 //   const imageRef=useRef();
 //   useEffect(()=>{
 //      const imageElement=imageRef.current;
-
+ 
 //      const handleScroll=()=>{
 //       const scrollPosition=window.scrollY;
 //       const scrollThreshold=100;
