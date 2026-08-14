@@ -48,7 +48,7 @@ Built with **Next.js**, **Supabase**, **LangChain**, **Pinecone**, and **Gemini 
 
 ## ⚡ **Installation**
 ```bash
-# Clone the repo
+# Clone the repo 
 git clone https://github.com/your-username/spend-ai.git
 
 # Navigate to project
