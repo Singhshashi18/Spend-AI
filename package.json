@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "node init && next dev --turbopack",
     "email": "email dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
+    "build": "node init && prisma generate && next build",
+    "start": "node init && next start",
     "lint": "next lint"
   },
   "dependencies": {
